@@ -1,0 +1,52 @@
+body {
+    background-color: #808080;
+}
+
+input {
+    font-size: 30px;
+    outline: none;
+    padding: 5px;
+    transition: all 0.9s ease-in, box-shadow 0.7s ease-in;
+    height: 60px;
+    width: 140px;
+    border-radius: 120px;
+    cursor: pointer;
+    border: 3px solid #0094ff;
+}
+
+    input::placeholder {
+        opacity: 0;
+        font-style: italic;
+        color: #00ff21;
+        transition: 1.3s linear;
+    }
+
+    input:hover {
+        transition: all 0.3s ease-in;
+        box-shadow: 0px 0px 40px rgb(178 0 255);
+    }
+
+    input:focus::placeholder {
+        opacity: 1;
+        transition: 1.3s linear;
+    }
+
+    input:focus,
+    input:not(:placeholder-shown) {
+        padding: 10px 20px;
+        border-radius: 1000px;
+        width: 300px;
+        transition: all 0.9s ease-out;
+        box-shadow: 0px 0px 40px rgb(255 0 110);
+    }
+
+label {
+    font-size: 30px;
+    font-style: italic;
+    color: #b52f2f;
+}
+
+#general {
+    margin-top: 20%;
+    margin-left: 8%;
+}
